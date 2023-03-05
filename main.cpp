@@ -1,0 +1,95 @@
+#include <iostream>
+#include "Horario.h"
+
+
+int main() {
+    Clase AC (1550,"Analisis de Circuitos");
+    Clase IM (1570,"Ingenieria de Materiales");
+    Clase IML (6570,"Ingenieria de Materiales LAB");
+    Clase MS (1540,"Mecanica de Solidos");
+    Clase TP (1472,"Tecnicas de Programacion");
+    Clase TM (1409,"Termofluidos");
+    int AC2[7]={2,INT16_MAX,2,INT16_MAX,2,INT16_MAX,INT16_MAX};
+    int AC2D[7]={2,0,2,0,2,0,0};
+    Grupo GAC2(2,"Maria del Pilar",AC2,AC2D,7.9);
+    int AC6[7]={8,INT16_MAX,8,INT16_MAX,8,INT16_MAX,INT16_MAX};
+    int AC6D[7]={2,0,2,0,2,0,0};
+    Grupo GAC6(6,"Diana Paula",AC6,AC6D,7.6);
+    int AC10[7]={INT16_MAX,8,INT16_MAX,8,2,INT16_MAX,INT16_MAX};
+    int AC10D[7]={0,4,0,2,2,0,0};
+    Grupo GAC10(10,"Diana Paula",AC10,AC10D,7.6);
+    //AC.Agregar_grupo(GAC2);
+    //AC.Agregar_grupo(GAC6);
+    //AC.Agregar_grupo(GAC10);
+    int IM7[7]={INT16_MAX,6,INT16_MAX,6,INT16_MAX,INT16_MAX,INT16_MAX};
+    int IM7D[7]={0,2,0,2,0,0,0};
+    Grupo GIM7(7,"Alejandra Garza",IM7,IM7D,7.4);
+    int IM2[7]={2,INT16_MAX,INT16_MAX,INT16_MAX,2,INT16_MAX,INT16_MAX};
+    int IM2D[7]={2,0,0,0,2,0,0};
+    Grupo GIM2(7,"Alba Covelo",IM2,IM2D,7.4);
+    //IM.Agregar_grupo(GIM7);
+    //IM.Agregar_grupo(GIM2);
+    int MS5[7]={INT16_MAX,11,INT16_MAX,11,INT16_MAX,INT16_MAX,INT16_MAX};
+    int MS5D[7]={0,2,0,2,0,0,0};
+    Grupo GMS5(5,"Jose Luis",MS5,MS5D,7.6);
+    int MS6[7]={INT16_MAX,4,INT16_MAX,4,INT16_MAX,INT16_MAX,INT16_MAX};
+    int MS6D[7]={0,2,0,2,0,0,0};
+    Grupo GMS6(6,"Epifanio Vargas",MS6,MS6D,7.2);
+    int MS7[7]={9,INT16_MAX,9,INT16_MAX,INT16_MAX,INT16_MAX,INT16_MAX};
+    int MS7D[7]={2,0,2,0,0,0,0};
+    Grupo GMS7(7,"Adrian espinosa",MS7,MS7D,7.8);
+    MS.Agregar_grupo(GMS5);
+    MS.Agregar_grupo(GMS6);
+    MS.Agregar_grupo(GMS7);
+    int TP1[7]={8,INT16_MAX,8,INT16_MAX,8,INT16_MAX,INT16_MAX};
+    int TP1D[7]={2,0,2,0,2,0,0};
+    Grupo GTP1(1,"Miguel Serrano",TP1,TP1D,9.3);
+    int TP2[7]={4,INT16_MAX,4,INT16_MAX,4,INT16_MAX,INT16_MAX};
+    int TP2D[7]={2,0,2,0,2,0,0};
+    Grupo GTP2(2,"Jorge Armando",TP2,TP2D,8.1);
+    //TP.Agregar_grupo(GTP1);
+    //TP.Agregar_grupo(GTP2);
+    int TM2[7]={INT16_MAX,10,INT16_MAX,10,INT16_MAX,INT16_MAX,INT16_MAX};
+    int TM2D[7]={0,2,0,2,2,0,0};
+    Grupo GTM2(2,"Gustavo Becerra",TM2,TM2D,7.7);
+    //TM.Agregar_grupo(GTM2);
+    //TM.Agregar_grupo(GTM6);
+    Horario principal;
+    principal.agregarClase(AC);
+    principal.agregarClase(IM);
+    principal.agregarClase(MS);
+    principal.agregarClase(TP);
+    principal.agregarClase(TM);
+    Horario::imprimir(principal.generatePossibleComb());
+    /*int inicio[7]={0,13,INT16_MAX,INT16_MAX,INT16_MAX,INT16_MAX,INT16_MAX};
+    int duracione[7]={2,1,2,0,0,0,1};
+    Grupo temp(7,"Ocadios",inicio,duracione,10);
+    Clase uno(1,"Estatica");
+    uno.Agregar_grupo(temp);
+    //uno.imprimir();
+    (&temp)->~Grupo();
+    inicio[1]=12;
+    new ((&temp)) Grupo(8,"Aban",inicio,duracione,9);
+    //uno.Agregar_grupo(temp);
+    //uno.imprimir();
+    Horario hola;
+    /*hola.agregarClase(uno);
+    Clase dos(2,"Dinamica");
+    Clase tres(3,"Cinematica");
+    inicio[0]=INT16_MAX;
+    inicio[1]=12;
+    new ((&temp)) Grupo(1,"Aban",inicio,duracione,9);
+    dos.Agregar_grupo(temp);
+    //dos.imprimir();
+    inicio[1]=INT16_MAX;
+    inicio[6]=0;
+    new ((&temp)) Grupo(9,"julia",inicio,duracione,9);
+    dos.Agregar_grupo(temp);
+
+    hola.agregarClase(dos);
+    //hola.agregarClase(tres);
+    hola.imprimir(hola.generatePossibleComb());
+    std::cout << std::endl;
+     */
+    return 0;
+}

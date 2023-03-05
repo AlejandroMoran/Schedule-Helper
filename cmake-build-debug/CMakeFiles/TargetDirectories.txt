@@ -1,0 +1,3 @@
+C:/Users/Moran/CLionProjects/Horario/cmake-build-debug/CMakeFiles/Horario.dir
+C:/Users/Moran/CLionProjects/Horario/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Moran/CLionProjects/Horario/cmake-build-debug/CMakeFiles/rebuild_cache.dir
